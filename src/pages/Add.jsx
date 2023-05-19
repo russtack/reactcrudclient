@@ -25,10 +25,34 @@ const Add = () => {
   return (
     <div className="form">
       <h1>Add new book</h1>
-      <input type="text" name="title" id="" onChange={handleChange} />
-      <input type="text" name="desc" id="" onChange={handleChange} />
-      <input type="number" name="price" id="" onChange={handleChange} />
-      <input type="text" name="cover" id="" onChange={handleChange} />
+      <input
+        placeholder="Title"
+        type="text"
+        name="title"
+        id=""
+        onChange={handleChange}
+      />
+      <input
+        placeholder="Description"
+        type="text"
+        name="desc"
+        id=""
+        onChange={handleChange}
+      />
+      <input
+        placeholder="Price"
+        type="number"
+        name="price"
+        id=""
+        onChange={handleChange}
+      />
+      <input
+        placeholder="Image URL"
+        type="text"
+        name="cover"
+        id=""
+        onChange={handleChange}
+      />
       <button type="submit" onClick={handleClick}>
         Submit
       </button>
