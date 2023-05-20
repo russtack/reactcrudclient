@@ -6,7 +6,9 @@ const Books = () => {
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const books = await axios.get("http://localhost:8800/books");
+        const books = await axios.get(
+          "https://reactcrudserver-cnoy.vercel.app/books"
+        );
         setBooks(books.data);
       } catch (err) {
         console.log(err);
@@ -15,7 +17,7 @@ const Books = () => {
     fetchAllBooks();
   }, []);
   const handleDelete = async (id) => {
-    await axios.delete("http://localhost:8800/books/" + id);
+    await axios.delete("https://reactcrudserver-cnoy.vercel.app/" + id);
     window.location.reload();
   };
   return (

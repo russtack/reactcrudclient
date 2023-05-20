@@ -16,7 +16,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8800/books", book);
+      await axios.post("https://reactcrudserver-cnoy.vercel.app/books", book);
       navigate("/");
     } catch (error) {
       console.log(error);
